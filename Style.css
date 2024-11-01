@@ -206,6 +206,7 @@ nav .fa{display: none !important;}
         right: -200px !important;
         text-align: left !important;
         z-index: 2 !important;
+        transition: 1s !important;
     }
     nav .fa{
         display: block !important;
@@ -216,6 +217,7 @@ nav .fa{display: none !important;}
     }
 
     .nav-links ul{
-        padding: 30px;
+        padding: 30px !important;
     }
 }
+    
