@@ -203,7 +203,7 @@ nav .fa{display: none !important;}
         height: 100vh !important;
         width: 200px !important;
         top: 0 !important;
-        right: 0 !important;
+        right: -200px !important;
         text-align: left !important;
         z-index: 2 !important;
     }
@@ -213,5 +213,9 @@ nav .fa{display: none !important;}
         margin: 10px !important;
         font-size: 22px !important;
         cursor: pointer !important;
+    }
+
+    .nav-links ul{
+        padding: 30px;
     }
 }
