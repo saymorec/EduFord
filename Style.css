@@ -191,6 +191,9 @@ nav {
     background: #f44336 !important;
     transition: 1s !important;
 }
+
+nav .fa{display: none !important;}
+
 @media(max-with: 700px){
     .text-box h1{font-size: 20px !important;}
     .nav-links ul li{display: block !important;}
