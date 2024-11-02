@@ -227,4 +227,109 @@ nav .fa{display: none !important;}
     padding: 10px !important;
    }
 
+   .container {
+    display: flex !important;
+    flex-direction: row !important; 
+    gap: 100px !important; 
+    justify-content: center !important; 
+}
+
+.row {
+    display: flex !important;
+    justify-content: center !important; 
+}
+
+.course-col {
+    padding: 20px 12px !important;
+    background: #fff3f3 !important;
+    margin-bottom: 5% !important;
+    transition: 0.5s !important;
     
+}
+
+h3{
+    text-align: center !important;
+    font-weight: 600 !important;
+    margin: 10px 0 !important;
+
+}
+
+.course-col:hover{box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);}
+
+.campus{
+    width: 80% !important;
+    margin: auto !important;
+    text-align: center !important;
+    padding-top: 50px !important;
+    
+    
+}
+
+.raw {
+    display: flex !important;
+    flex-direction: row !important; /* Stacks child elements vertically */
+    align-items: center !important; /* Centers elements horizontally, optional */
+    gap: 100px !important; /* Adds space between each .col section */
+    justify-content: center !important;
+}
+
+.col {
+    display: flex !important;
+    flex-direction: row !important; /* Stacks content within .col vertically */
+    align-items: center !important; /* Centers image and text horizontally */
+    text-align: center !important; /* Centers text within each column */
+    gap: 30px !important;
+    position: relative !important;
+    
+}
+
+.layer0 {
+    position: absolute !important;
+    top: 20% !important; /* Adjust to position the text as needed */
+    left: 13.4% !important;
+    transform: translateX(-50% -50%) !important;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: semi-transparent background */
+    color: white; /* Text color */
+    padding: 5px 10px; /* Adds some padding around the text */
+    border-radius: 5px; /* Optional: rounds the corners */
+    
+}
+
+.layer1 {
+    position: absolute !important;
+    top: 20% !important; /* Adjust to position the text as needed */
+    left: 20% !important;
+    transform: translateX(-50% -50%) !important;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: semi-transparent background */
+    color: white; /* Text color */
+    padding: 5px 10px; /* Adds some padding around the text */
+    border-radius: 5px; /* Optional: rounds the corners */
+    
+}
+
+.layer2 {
+    position: absolute !important;
+    top: 20% !important; /* Adjust to position the text as needed */
+    left: 40.4% !important;
+    transform: translateX(-50% -50%) !important;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: semi-transparent background */
+    color: white; /* Text color */
+    padding: 5px 10px; /* Adds some padding around the text */
+    border-radius: 5px; /* Optional: rounds the corners */
+    
+}
+
+.col img { width: 500px !important; /* Adjust width as needed */}
+
+
+.layer0:hover{background: rgba(226, 0, 0, 0.7) !important;}
+.layer1:hover{background: rgba(226, 0, 0, 0.7) !important;}
+.layer2:hover{background: rgba(226, 0, 0, 0.7) !important;}
+
+
+
+
+
+ 
+
+   
