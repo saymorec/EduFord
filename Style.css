@@ -192,6 +192,7 @@ h3 {
     margin: auto !important;
     text-align: center !important;
     padding-top: 50px !important;
+
 }
 
 /* Layout for Campus Images and Text */
@@ -199,7 +200,7 @@ h3 {
     display: flex !important;
     flex-direction: row !important;
     align-items: center !important;
-    gap: 100px !important;
+    gap: 50px !important;
     justify-content: center !important;
 }
 
@@ -211,18 +212,22 @@ h3 {
     text-align: center !important;
     gap: 30px !important;
     position: relative !important;
+    
 }
 
 /* Styling Layers for Campus Text */
 .layer0, .layer1, .layer2 {
     position: absolute !important;
     top: 20% !important;
-    left: 40.4% !important;
+    left: 50.4% !important;
     transform: translateX(-50%) !important;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     padding: 5px 10px;
     border-radius: 5px;
+    cursor: pointer !important;
+    
+    
 }
 
 /* Hover Effect for Campus Text Layers */
@@ -233,4 +238,106 @@ h3 {
 /* Image Width for Campus Section */
 .col img {
     width: 500px !important;
+    height: 300px;
+    object-fit: cover;
+    cursor: pointer !important;
+}
+
+
+
+/* Media Query for Larger Screens to show in two columns */
+
+
+@media (max-width: 768px) {
+    /* Adjusts the text-box position and font size */
+    .text-box h1 { font-size: 36px; }
+    .text-box p { font-size: 16px; }
+    
+    /* Makes nav-links vertical */
+    .nav-links ul { flex-direction: column; }
+
+    /* Stacks course and campus columns vertically */
+    .container, .raw { flex-direction: column; gap: 20px; }
+    
+    /* Adjusts images to a smaller width */
+    .col img { width: 100%; }
+}
+
+/* Style for Facilities section */
+.Facilities {
+    width: 100%;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.Facilities h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.Facilities p {
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+/* Flexbox styling to arrange f-col items in a vertical layout */
+.row-f {
+    display: flex;
+    flex-direction: column; /* Vertical stack for all f-col elements */
+    align-items: center;
+    gap: 20px; /* Space between each .f-col */
+}
+
+.f-col {
+    display: flex;
+    flex-direction: column; /* Vertical stack within each .f-col */
+    align-items: center;
+    width: 80%; /* Adjust as needed */
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9; /* Light background color for contrast */
+    cursor: pointer;
+}
+
+.f-col img {
+    width: 200%;
+    max-width: 400px; /* Optional max-width for larger screens */
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 10px; /* Space below image */
+    border-radius: 8px; /* Optional rounded corners */
+    cursor: pointer;
+}
+
+.f-col h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 10px 0;
+    text-align: left !important;
+}
+
+.f-col p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    text-align: center;
+
+}
+
+.f-col:hover{box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);}
+
+/* Media query for larger screens - changes to two columns */
+@media (min-width: 768px) {
+    .row-f {
+        flex-direction: row; /* Arrange .f-col items in a row */
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .f-col {
+        width: 45%; /* Two columns */
+        margin: 10px;
+    }
 }
