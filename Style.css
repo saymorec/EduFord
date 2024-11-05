@@ -4,6 +4,11 @@
     padding: 0;
 }
 
+body {
+    background-color: #f0f0f0 !important; /* Use !important to enforce your background color */
+}
+
+
 /* Font Style Definitions */
 .poppins-thin { font-family: "Poppins", sans-serif; font-weight: 100; font-style: normal; }
 .poppins-extralight { font-family: "Poppins", sans-serif; font-weight: 200; font-style: normal; }
@@ -24,11 +29,12 @@
 .poppins-extrabold-italic { font-family: "Poppins", sans-serif; font-weight: 800; font-style: italic; }
 .poppins-black-italic { font-family: "Poppins", sans-serif; font-weight: 900; font-style: italic; }
 
+
 /* Header Section */
 .Header {
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(images/EDUCARE2-604x270.jpeg);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(images/EDUCARE2-604x270.jpeg) !important;
     background-position: center;
     background-size: cover;
     position: relative;
@@ -244,7 +250,6 @@ h3 {
 }
 
 
-
 /* Media Query for Larger Screens to show in two columns */
 
 
@@ -262,6 +267,34 @@ h3 {
     /* Adjusts images to a smaller width */
     .col img { width: 100%; }
 }
+@media (min-width: 768px) {
+    .raw {
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .col {
+        width: 30%; /* Distribute columns evenly on larger screens */
+    }
+}
+
+/* Media query for smaller screens (mobile devices) */
+@media (max-width: 767px) {
+    .raw {
+        flex-direction: column; /* Stack .col items vertically */
+        align-items: center;
+    }
+
+    .col {
+        max-width: 100%; /* Full width for mobile */
+        margin-bottom: 20px;
+    }
+
+    .col img {
+        max-width: 100%; /* Scale down images on smaller screens */
+    }
+}
+
 
 /* Style for Facilities section */
 .Facilities {
@@ -309,6 +342,7 @@ h3 {
     margin-bottom: 10px; /* Space below image */
     border-radius: 8px; /* Optional rounded corners */
     cursor: pointer;
+
 }
 
 .f-col h3 {
@@ -340,4 +374,105 @@ h3 {
         width: 45%; /* Two columns */
         margin: 10px;
     }
+}
+/*------ Testimonials ---------*/
+
+.testimonials h1{text-align: center !important;}
+.testimonials p{text-align: center !important;}
+
+
+/* Style each individual column item */
+.row-t {
+    display: flex !important;
+    justify-content: center !important;
+    flex-direction: row; 
+}
+
+.col-t {
+    padding: 20px 12px !important;
+    background: #fff3f3 !important;
+    margin-bottom: 5% !important;
+    transition: 0.5s !important;
+    flex-direction:row ;
+}
+
+/* Make images small, round, and centered */
+
+
+/* Center-align text and apply spacing */
+.col-t h1,
+.col-t h3 {
+    text-align: center !important;
+    font-weight: 600 !important;
+    margin: 10px 0 !important;
+}
+
+.col-t p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Responsive adjustments for larger screens */
+@media (min-width: 768px) {
+    .row-t {
+        gap: 40px; /* Increase gap between .col-t items for larger screens */
+    }
+}
+
+/* ------- Call To Action --------- */ 
+
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(images/OnlineEnrollmentWeb-REV3.jpeg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.cta h1{
+    color: whitesmoke;
+    margin-bottom: 40px;
+}
+.cta a{color: whitesmoke;}
+
+@media(max-width: 700px){
+    .cta h1{
+        font-size: 24px;
+    }
+}
+
+/*------- Footer ---------*/ 
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+
+}
+
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+} 
+
+.copyright {
+    display: flex;
+    align-items: center; /* Vertically center items */
+    gap: 5px; /* Space between icon and text */
+    font-size: 14px; /* Adjust text size as needed */
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.copyright p {
+    margin: 0; /* Remove any default margin from the paragraph */
+    text-align: center;
 }
